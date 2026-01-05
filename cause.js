@@ -117,7 +117,7 @@ shuffleButton.addEventListener('click', () => {
 
 // Floating elements function (same as before)
 function createFloatingElement() {
-    const elements = ['🌸', '✨', '💖', '🦋', '⭐'];
+    const elements = ['🌸', '✨', '🌼', '🦋', '⭐'];
     const element = document.createElement('div');
     element.className = 'floating';
     element.textContent = elements[Math.floor(Math.random() * elements.length)];
@@ -135,14 +135,14 @@ function createFloatingElement() {
 }
 
 // // Custom cursor (same as before)
-const cursor = document.querySelector('.custom-cursor');
-document.addEventListener('mousemove', (e) => {
-    gsap.to(cursor, {
-        x: e.clientX - 15,
-        y: e.clientY - 15,
-        duration: 0.2
-    });
-});
+// const cursor = document.querySelector('.custom-cursor');
+// document.addEventListener('mousemove', (e) => {
+//     gsap.to(cursor, {
+//         x: e.clientX - 15,
+//         y: e.clientY - 15,
+//         duration: 0.2
+//     });
+// });
 
 // Create initial floating elements
 setInterval(createFloatingElement, 2000);
